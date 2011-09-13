@@ -13,7 +13,75 @@
 		EE22C34E14201226002E215F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34C14201226002E215F /* Credits.rtf */; };
 		EE22C35114201226002E215F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C35014201226002E215F /* AppDelegate.m */; };
 		EE22C35414201227002E215F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE22C35214201227002E215F /* MainMenu.xib */; };
+		EE22C37814201835002E215F /* JCSSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C37714201835002E215F /* JCSSheetController.m */; };
+		EE22C37B14201862002E215F /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE22C36B14201769002E215F /* ObjectiveGit.framework */; };
+		EE22C37E1420188E002E215F /* ObjectiveGit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE22C36B14201769002E215F /* ObjectiveGit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE22C36A14201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ObjectiveGit;
+		};
+		EE22C36C14201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDD8AEDF1313311100CB5D40;
+			remoteInfo = Tests;
+		};
+		EE22C36E14201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04DB4645133AB57600D9C624;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
+		EE22C37014201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDD9C3D5133BA556003708E7;
+			remoteInfo = "Tests-iOS";
+		};
+		EE22C37214201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DDB97BA9141C90F60001F17A;
+			remoteInfo = "libgit2-ios";
+		};
+		EE22C37414201769002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD5695E7141C934800E1B1CA;
+			remoteInfo = libgit2;
+		};
+		EE22C3791420185B002E215F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = ObjectiveGit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE22C37C14201872002E215F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE22C37E1420188E002E215F /* ObjectiveGit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE22C33914201226002E215F /* CommitViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +97,9 @@
 		EE22C35014201226002E215F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EE22C35314201227002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EE22C35A14201343002E215F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
+		EE22C37614201835002E215F /* JCSSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCSSheetController.h; path = JCSSheetController/JCSSheetController.h; sourceTree = SOURCE_ROOT; };
+		EE22C37714201835002E215F /* JCSSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCSSheetController.m; path = JCSSheetController/JCSSheetController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE22C37B14201862002E215F /* ObjectiveGit.framework in Frameworks */,
 				EE22C33E14201226002E215F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +118,7 @@
 		EE22C32E14201226002E215F = {
 			isa = PBXGroup;
 			children = (
+				EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */,
 				EE22C34314201226002E215F /* CommitViewer */,
 				EE22C33C14201226002E215F /* Frameworks */,
 				EE22C33A14201226002E215F /* Products */,
@@ -85,6 +158,8 @@
 				EE22C35A14201343002E215F /* AppDelegate.h */,
 				EE22C35014201226002E215F /* AppDelegate.m */,
 				EE22C35214201227002E215F /* MainMenu.xib */,
+				EE22C37614201835002E215F /* JCSSheetController.h */,
+				EE22C37714201835002E215F /* JCSSheetController.m */,
 				EE22C34414201226002E215F /* Supporting Files */,
 			);
 			path = CommitViewer;
@@ -102,6 +177,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EE22C35C14201769002E215F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C36B14201769002E215F /* ObjectiveGit.framework */,
+				EE22C36D14201769002E215F /* Tests.app */,
+				EE22C36F14201769002E215F /* ObjectiveGit */,
+				EE22C37114201769002E215F /* Tests-iOS.app */,
+				EE22C37314201769002E215F /* libgit2-ios.a */,
+				EE22C37514201769002E215F /* libgit2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,10 +200,12 @@
 				EE22C33514201226002E215F /* Sources */,
 				EE22C33614201226002E215F /* Frameworks */,
 				EE22C33714201226002E215F /* Resources */,
+				EE22C37C14201872002E215F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE22C37A1420185B002E215F /* PBXTargetDependency */,
 			);
 			name = CommitViewer;
 			productName = CommitViewer;
@@ -140,12 +230,63 @@
 			mainGroup = EE22C32E14201226002E215F;
 			productRefGroup = EE22C33A14201226002E215F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EE22C35C14201769002E215F /* Products */;
+					ProjectRef = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EE22C33814201226002E215F /* CommitViewer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EE22C36B14201769002E215F /* ObjectiveGit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveGit.framework;
+			remoteRef = EE22C36A14201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE22C36D14201769002E215F /* Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Tests.app;
+			remoteRef = EE22C36C14201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE22C36F14201769002E215F /* ObjectiveGit */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = ObjectiveGit;
+			remoteRef = EE22C36E14201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE22C37114201769002E215F /* Tests-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Tests-iOS.app";
+			remoteRef = EE22C37014201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE22C37314201769002E215F /* libgit2-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgit2-ios.a";
+			remoteRef = EE22C37214201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE22C37514201769002E215F /* libgit2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgit2.a;
+			remoteRef = EE22C37414201769002E215F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EE22C33714201226002E215F /* Resources */ = {
@@ -167,10 +308,19 @@
 			files = (
 				EE22C34A14201226002E215F /* main.m in Sources */,
 				EE22C35114201226002E215F /* AppDelegate.m in Sources */,
+				EE22C37814201835002E215F /* JCSSheetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE22C37A1420185B002E215F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveGit;
+			targetProxy = EE22C3791420185B002E215F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE22C34614201226002E215F /* InfoPlist.strings */ = {
