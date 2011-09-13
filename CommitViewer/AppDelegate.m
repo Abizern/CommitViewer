@@ -6,9 +6,9 @@
 //  Copyright 2011 Jungle Candy Software. All rights reserved.
 //
 
-#import "CommitViewerAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation CommitViewerAppDelegate
+@implementation AppDelegate
 
 @synthesize window;
 

@@ -11,7 +11,7 @@
 		EE22C34814201226002E215F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34614201226002E215F /* InfoPlist.strings */; };
 		EE22C34A14201226002E215F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C34914201226002E215F /* main.m */; };
 		EE22C34E14201226002E215F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34C14201226002E215F /* Credits.rtf */; };
-		EE22C35114201226002E215F /* CommitViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C35014201226002E215F /* CommitViewerAppDelegate.m */; };
+		EE22C35114201226002E215F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C35014201226002E215F /* AppDelegate.m */; };
 		EE22C35414201227002E215F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE22C35214201227002E215F /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -21,14 +21,14 @@
 		EE22C34014201226002E215F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		EE22C34114201226002E215F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EE22C34214201226002E215F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EE22C34514201226002E215F /* CommitViewer-Info.plist */ = {isa = PBXFileReference; path = "CommitViewer-Info.plist"; sourceTree = "<group>"; };
+		EE22C34514201226002E215F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE22C34714201226002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE22C34914201226002E215F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EE22C34B14201226002E215F /* CommitViewer-Prefix.pch */ = {isa = PBXFileReference; path = "CommitViewer-Prefix.pch"; sourceTree = "<group>"; };
+		EE22C34B14201226002E215F /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		EE22C34D14201226002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		EE22C34F14201226002E215F /* CommitViewerAppDelegate.h */ = {isa = PBXFileReference; path = CommitViewerAppDelegate.h; sourceTree = "<group>"; };
-		EE22C35014201226002E215F /* CommitViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitViewerAppDelegate.m; sourceTree = "<group>"; };
+		EE22C35014201226002E215F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EE22C35314201227002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EE22C35A14201343002E215F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 		EE22C34314201226002E215F /* CommitViewer */ = {
 			isa = PBXGroup;
 			children = (
-				EE22C34F14201226002E215F /* CommitViewerAppDelegate.h */,
-				EE22C35014201226002E215F /* CommitViewerAppDelegate.m */,
+				EE22C35A14201343002E215F /* AppDelegate.h */,
+				EE22C35014201226002E215F /* AppDelegate.m */,
 				EE22C35214201227002E215F /* MainMenu.xib */,
 				EE22C34414201226002E215F /* Supporting Files */,
 			);
@@ -93,10 +93,10 @@
 		EE22C34414201226002E215F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE22C34514201226002E215F /* CommitViewer-Info.plist */,
+				EE22C34514201226002E215F /* Info.plist */,
 				EE22C34614201226002E215F /* InfoPlist.strings */,
 				EE22C34914201226002E215F /* main.m */,
-				EE22C34B14201226002E215F /* CommitViewer-Prefix.pch */,
+				EE22C34B14201226002E215F /* Prefix.pch */,
 				EE22C34C14201226002E215F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE22C34A14201226002E215F /* main.m in Sources */,
-				EE22C35114201226002E215F /* CommitViewerAppDelegate.m in Sources */,
+				EE22C35114201226002E215F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +209,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -222,6 +223,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -235,12 +237,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -249,8 +253,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommitViewer/CommitViewer-Prefix.pch";
-				INFOPLIST_FILE = "CommitViewer/CommitViewer-Info.plist";
+				GCC_PREFIX_HEADER = CommitViewer/Prefix.pch;
+				INFOPLIST_FILE = CommitViewer/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -260,8 +264,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CommitViewer/CommitViewer-Prefix.pch";
-				INFOPLIST_FILE = "CommitViewer/CommitViewer-Info.plist";
+				GCC_PREFIX_HEADER = CommitViewer/Prefix.pch;
+				INFOPLIST_FILE = CommitViewer/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
