@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE22C33E14201226002E215F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE22C33D14201226002E215F /* Cocoa.framework */; };
+		EE22C34814201226002E215F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34614201226002E215F /* InfoPlist.strings */; };
+		EE22C34A14201226002E215F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C34914201226002E215F /* main.m */; };
+		EE22C34E14201226002E215F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34C14201226002E215F /* Credits.rtf */; };
+		EE22C35114201226002E215F /* CommitViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C35014201226002E215F /* CommitViewerAppDelegate.m */; };
+		EE22C35414201227002E215F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE22C35214201227002E215F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE22C33914201226002E215F /* CommitViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommitViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE22C33D14201226002E215F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE22C34014201226002E215F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EE22C34114201226002E215F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE22C34214201226002E215F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE22C34514201226002E215F /* CommitViewer-Info.plist */ = {isa = PBXFileReference; path = "CommitViewer-Info.plist"; sourceTree = "<group>"; };
+		EE22C34714201226002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE22C34914201226002E215F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE22C34B14201226002E215F /* CommitViewer-Prefix.pch */ = {isa = PBXFileReference; path = "CommitViewer-Prefix.pch"; sourceTree = "<group>"; };
+		EE22C34D14201226002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EE22C34F14201226002E215F /* CommitViewerAppDelegate.h */ = {isa = PBXFileReference; path = CommitViewerAppDelegate.h; sourceTree = "<group>"; };
+		EE22C35014201226002E215F /* CommitViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitViewerAppDelegate.m; sourceTree = "<group>"; };
+		EE22C35314201227002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE22C33614201226002E215F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22C33E14201226002E215F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE22C32E14201226002E215F = {
+			isa = PBXGroup;
+			children = (
+				EE22C34314201226002E215F /* CommitViewer */,
+				EE22C33C14201226002E215F /* Frameworks */,
+				EE22C33A14201226002E215F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE22C33A14201226002E215F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C33914201226002E215F /* CommitViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE22C33C14201226002E215F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C33D14201226002E215F /* Cocoa.framework */,
+				EE22C33F14201226002E215F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE22C33F14201226002E215F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C34014201226002E215F /* AppKit.framework */,
+				EE22C34114201226002E215F /* CoreData.framework */,
+				EE22C34214201226002E215F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EE22C34314201226002E215F /* CommitViewer */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C34F14201226002E215F /* CommitViewerAppDelegate.h */,
+				EE22C35014201226002E215F /* CommitViewerAppDelegate.m */,
+				EE22C35214201227002E215F /* MainMenu.xib */,
+				EE22C34414201226002E215F /* Supporting Files */,
+			);
+			path = CommitViewer;
+			sourceTree = "<group>";
+		};
+		EE22C34414201226002E215F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE22C34514201226002E215F /* CommitViewer-Info.plist */,
+				EE22C34614201226002E215F /* InfoPlist.strings */,
+				EE22C34914201226002E215F /* main.m */,
+				EE22C34B14201226002E215F /* CommitViewer-Prefix.pch */,
+				EE22C34C14201226002E215F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE22C33814201226002E215F /* CommitViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE22C35714201227002E215F /* Build configuration list for PBXNativeTarget "CommitViewer" */;
+			buildPhases = (
+				EE22C33514201226002E215F /* Sources */,
+				EE22C33614201226002E215F /* Frameworks */,
+				EE22C33714201226002E215F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommitViewer;
+			productName = CommitViewer;
+			productReference = EE22C33914201226002E215F /* CommitViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE22C33014201226002E215F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Jungle Candy Software";
+			};
+			buildConfigurationList = EE22C33314201226002E215F /* Build configuration list for PBXProject "CommitViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE22C32E14201226002E215F;
+			productRefGroup = EE22C33A14201226002E215F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE22C33814201226002E215F /* CommitViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE22C33714201226002E215F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22C34814201226002E215F /* InfoPlist.strings in Resources */,
+				EE22C34E14201226002E215F /* Credits.rtf in Resources */,
+				EE22C35414201227002E215F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE22C33514201226002E215F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22C34A14201226002E215F /* main.m in Sources */,
+				EE22C35114201226002E215F /* CommitViewerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE22C34614201226002E215F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE22C34714201226002E215F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE22C34C14201226002E215F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE22C34D14201226002E215F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EE22C35214201227002E215F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE22C35314201227002E215F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE22C35514201227002E215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE22C35614201227002E215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE22C35814201227002E215F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommitViewer/CommitViewer-Prefix.pch";
+				INFOPLIST_FILE = "CommitViewer/CommitViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE22C35914201227002E215F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommitViewer/CommitViewer-Prefix.pch";
+				INFOPLIST_FILE = "CommitViewer/CommitViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE22C33314201226002E215F /* Build configuration list for PBXProject "CommitViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22C35514201227002E215F /* Debug */,
+				EE22C35614201227002E215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE22C35714201227002E215F /* Build configuration list for PBXNativeTarget "CommitViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22C35814201227002E215F /* Debug */,
+				EE22C35914201227002E215F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE22C33014201226002E215F /* Project object */;
+}
