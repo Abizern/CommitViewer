@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class GTCommit;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSOpenSavePanelDelegate> {
     NSWindow *window;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) GTCommit *commit;
+
+- (IBAction)openNewRepository:(id)sender;
 
 @end

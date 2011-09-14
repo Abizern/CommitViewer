@@ -13,7 +13,6 @@
 		EE22C34E14201226002E215F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE22C34C14201226002E215F /* Credits.rtf */; };
 		EE22C35114201226002E215F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C35014201226002E215F /* AppDelegate.m */; };
 		EE22C35414201227002E215F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE22C35214201227002E215F /* MainMenu.xib */; };
-		EE22C37814201835002E215F /* JCSSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22C37714201835002E215F /* JCSSheetController.m */; };
 		EE22C37B14201862002E215F /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE22C36B14201769002E215F /* ObjectiveGit.framework */; };
 		EE22C37E1420188E002E215F /* ObjectiveGit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE22C36B14201769002E215F /* ObjectiveGit.framework */; };
 /* End PBXBuildFile section */
@@ -98,8 +97,6 @@
 		EE22C35314201227002E215F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EE22C35A14201343002E215F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
-		EE22C37614201835002E215F /* JCSSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCSSheetController.h; path = JCSSheetController/JCSSheetController.h; sourceTree = SOURCE_ROOT; };
-		EE22C37714201835002E215F /* JCSSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCSSheetController.m; path = JCSSheetController/JCSSheetController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +155,6 @@
 				EE22C35A14201343002E215F /* AppDelegate.h */,
 				EE22C35014201226002E215F /* AppDelegate.m */,
 				EE22C35214201227002E215F /* MainMenu.xib */,
-				EE22C37614201835002E215F /* JCSSheetController.h */,
-				EE22C37714201835002E215F /* JCSSheetController.m */,
 				EE22C34414201226002E215F /* Supporting Files */,
 			);
 			path = CommitViewer;
@@ -308,7 +303,6 @@
 			files = (
 				EE22C34A14201226002E215F /* main.m in Sources */,
 				EE22C35114201226002E215F /* AppDelegate.m in Sources */,
-				EE22C37814201835002E215F /* JCSSheetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +353,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = required;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -387,7 +381,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_OBJC_GC = required;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
