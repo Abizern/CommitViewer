@@ -14,7 +14,11 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, retain) GTCommit *commit;
+@property (nonatomic, readonly) NSString *messageTitle;
+@property (nonatomic, readonly) NSString *messageDetails;
+@property (nonatomic, readonly) NSString *author;
+@property (nonatomic, readonly) NSDate *date;
+
 
 - (IBAction)openNewRepository:(id)sender;
 

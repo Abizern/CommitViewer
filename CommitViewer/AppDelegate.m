@@ -11,6 +11,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, retain) GTCommit *commit;
+
 - (NSURL *)repositoryURLForURL:(NSURL *)url;
 
 @end
@@ -20,11 +22,36 @@
 @synthesize window;
 @synthesize commit;
 
++ (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
+    NSSet *keySet = [NSSet setWithObjects:@"commit", nil];
+    if ([key isEqualToString:@"messageTitle"] || [key isEqualToString:@"messageDetails"] || [key isEqualToString:@"author"] || [key isEqualToString:@"date"]) {
+        return keySet;
+    }
+    return [super keyPathsForValuesAffectingValueForKey:key];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 }
 
+#pragma mark - non-synthesised accessors
+// Annoying that I have to do this - I'll have to change GTCommit to use properties at some later stage.
 
+- (NSString *)messageTitle {
+    return [self.commit messageTitle];
+}
+
+- (NSString *)messageDetails {
+    return [self.commit messageDetails];
+}
+
+- (NSString *)author {
+    return [self.commit author].name;
+}
+
+- (NSDate *)date {
+    return [self.commit commitDate];
+}
 
 - (IBAction)openNewRepository:(id)sender {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
@@ -33,9 +60,14 @@
     panel.showsHiddenFiles = YES;
     
     [panel beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
-        if (result == NSFileHandlingPanelOKButton) {
-            NSLog(@"selected: %@", [self repositoryURLForURL:panel.URL]);
+        if (result == NSFileHandlingPanelCancelButton) {
+            return;
         }
+        // I should do more error checking but thsi is only an example project ;)
+        GTRepository *repo = [GTRepository repositoryWithURL:[self repositoryURLForURL:panel.URL] error:NULL];
+        GTReference *head = [repo headReferenceWithError:NULL];
+        self.commit = (GTCommit *)[repo lookupObjectBySha:[head target]  error:NULL];
+        
     }];
     
 }
@@ -64,7 +96,6 @@
     // If the URL is a folder, then it should contain a subfolder called '.git
     NSString *kGit = @".git";
     NSString *endPoint = [url lastPathComponent];
-    NSLog(@"Endpoint: %@", endPoint);
     
     if ([[endPoint lowercaseString] hasSuffix:kGit]) {
         return url;
