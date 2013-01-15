@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD51DD5116A2DCF6002BEEFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F05A6B16011E5400B7AD1D;
+			remoteInfo = ObjectiveGitTests;
+		};
 		EE22C36A14201769002E215F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
@@ -25,40 +32,12 @@
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = ObjectiveGit;
 		};
-		EE22C36C14201769002E215F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDD8AEDF1313311100CB5D40;
-			remoteInfo = Tests;
-		};
 		EE22C36E14201769002E215F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 04DB4645133AB57600D9C624;
 			remoteInfo = "ObjectiveGit-iOS";
-		};
-		EE22C37014201769002E215F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDD9C3D5133BA556003708E7;
-			remoteInfo = "Tests-iOS";
-		};
-		EE22C37214201769002E215F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DDB97BA9141C90F60001F17A;
-			remoteInfo = "libgit2-ios";
-		};
-		EE22C37414201769002E215F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE22C35B14201769002E215F /* ObjectiveGitFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DD5695E7141C934800E1B1CA;
-			remoteInfo = libgit2;
 		};
 		EE22C3791420185B002E215F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -176,11 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				EE22C36B14201769002E215F /* ObjectiveGit.framework */,
-				EE22C36D14201769002E215F /* Tests.app */,
-				EE22C36F14201769002E215F /* ObjectiveGit */,
-				EE22C37114201769002E215F /* Tests-iOS.app */,
-				EE22C37314201769002E215F /* libgit2-ios.a */,
-				EE22C37514201769002E215F /* libgit2.a */,
+				EE22C36F14201769002E215F /* libObjectiveGit-iOS.a */,
+				AD51DD5216A2DCF6002BEEFA /* ObjectiveGitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +189,7 @@
 		EE22C33014201226002E215F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jungle Candy Software";
 			};
 			buildConfigurationList = EE22C33314201226002E215F /* Build configuration list for PBXProject "CommitViewer" */;
@@ -239,6 +216,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		AD51DD5216A2DCF6002BEEFA /* ObjectiveGitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ObjectiveGitTests.octest;
+			remoteRef = AD51DD5116A2DCF6002BEEFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EE22C36B14201769002E215F /* ObjectiveGit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -246,39 +230,11 @@
 			remoteRef = EE22C36A14201769002E215F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EE22C36D14201769002E215F /* Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Tests.app;
-			remoteRef = EE22C36C14201769002E215F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EE22C36F14201769002E215F /* ObjectiveGit */ = {
+		EE22C36F14201769002E215F /* libObjectiveGit-iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = ObjectiveGit;
+			path = "libObjectiveGit-iOS.a";
 			remoteRef = EE22C36E14201769002E215F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EE22C37114201769002E215F /* Tests-iOS.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Tests-iOS.app";
-			remoteRef = EE22C37014201769002E215F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EE22C37314201769002E215F /* libgit2-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libgit2-ios.a";
-			remoteRef = EE22C37214201769002E215F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EE22C37514201769002E215F /* libgit2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libgit2.a;
-			remoteRef = EE22C37414201769002E215F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -396,6 +352,7 @@
 		EE22C35814201227002E215F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CommitViewer/Prefix.pch;
 				INFOPLIST_FILE = CommitViewer/Info.plist;
@@ -407,6 +364,7 @@
 		EE22C35914201227002E215F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CommitViewer/Prefix.pch;
 				INFOPLIST_FILE = CommitViewer/Info.plist;
@@ -434,6 +392,7 @@
 				EE22C35914201227002E215F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

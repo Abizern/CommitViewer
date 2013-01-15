@@ -38,7 +38,7 @@
 // Annoying that I have to do this - I'll have to change GTCommit to use properties at some later stage.
 
 - (NSString *)messageTitle {
-    return [self.commit messageTitle];
+    return [self.commit message];
 }
 
 - (NSString *)messageDetails {
