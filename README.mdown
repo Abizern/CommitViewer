@@ -1,0 +1,30 @@
+# Commit Viewer
+
+This is an example project demonstrating how to add the [ObjectiveGit][2] framework to a Cocoa application.
+
+Don't expect it to do too much, it just lets you open a repository and presents some information from the commit pointed to by `head`.
+
+# Adding the ObjectiveGit Framework
+
+These are the steps to add the framework to your project:
+
+- Create an Xcode project for your application.
+
+- Get the files for the ObjectiveGit framework. *How you do this is up to you*. In this example I've added it as a Git submodule, and I used `git submodule update --init --recursive` after adding it, because the ObjectiveGit framework has the [libgit2][1] framework as a submodule and this takes care of setting that up as well.
+
+- From the Finder, drag the ObjectiveGit Xcode project bundle into Xcode's file explorer. I added it under the application project. You can add it as a sibling project, and Xcode will give you a choice of setting up a separate workspace.
+    
+- Select the Application project in the file explorer and it will bring up the project viewer. In here you can see the settings for the project and the target. Select the target and go to the Build Phases section.
+    
+- Add the ObjectiveGit framework as a target Dependency.
+
+- Add the ObjectiveGit framework to the Link Binary With Libraries section.
+
+- Add a new Copy Files build phase, set the destination to be Frameworks, and add the ObjectiveGit framework to that.
+
+**NB** As with any other framework, when you want to use any of it's methods, be sure to import `<ObjectiveGit/ObjectiveGit.h>`.
+
+And that's it! Use this project to see what the settings look like after they have been applied.
+
+[1]: https://github.com/libgit2/libgit2
+[2]: https://github.com/libgit2/objective-git
